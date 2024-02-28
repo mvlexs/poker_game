@@ -14,8 +14,7 @@ class Dealer ():
 
 
     def __init__(self, pot, centercard_1, centercard_2, centercard_3, centercard_4, centercard_5 , big_blind, small_blind, shuffled_deck, deck):
-        self.deck =  ["♤A","♤2","♤3","♤4","♤5","♤6","♤7","♤8","♤9","♤10","♤J","♤Q","♤K"]
-        self.shuffled_deck 
+        pass
 
    
 
