@@ -1,7 +1,7 @@
-import deck
+import dealer
 
-new_deck = deck.Deck([],[])
-new_deck.fill_deck()
-new_deck.printdeck()
+newdealer = dealer.Dealer
+
+print(f'{newdealer.deck.shuffle_deck()}{len(newdealer.deck.cards)}')
 
 

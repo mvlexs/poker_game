@@ -1,10 +1,12 @@
 from card import Card
+from random import shuffle
 
 class Deck ():
     
-    def __init__(self, cards, shuffled_cards) -> None:
-        self.cards = []
-        self.shuffled_cards = []
+    cards = []
+    
+    def __init__(self) -> None:
+        pass
 
     def fill_deck(self):
         value_counter = 1
@@ -17,11 +19,16 @@ class Deck ():
             value_counter += 1
             x.color = x.set_color(color_counter)
             self.cards.append(x)
+        return self.cards
 
-    def __repr__(self, cards) -> str:
-        rep = cards
+    def __repr__(self) -> str:
+        rep = self.cards
         return rep
     
-    def printdeck(self):
+    def print_deck(self):
         for i in range(len(self.cards)):
             print(f'{self.cards[i]}')
+
+    def shuffle_deck(self):
+        shuffle(self.cards)
+        return self.cards
